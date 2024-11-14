@@ -99,6 +99,21 @@ h1 {
     background: #555;
 }
 
+.discord {
+    padding: 20px 25px;
+    background-color: #141414;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    margin: 4px;
+    transition: 0.3s ease-in-out;
+}
+
+.sigma:hover {
+    background: #5865F2;
+    color: #000;
+}
+
 #loading-screen {
     position: fixed;
     top: 0;
