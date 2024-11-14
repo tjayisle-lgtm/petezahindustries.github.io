@@ -92,6 +92,7 @@ h1 {
     border-radius: 15px;
     border: none;
     margin: 4px;
+    cursor: pointer;
     transition: 0.3s ease-in-out;
 }
 
@@ -106,6 +107,7 @@ h1 {
     border-radius: 15px;
     border: none;
     margin: 4px;
+    cursor: pointer;
     transition: 0.3s ease-in-out;
 }
 
