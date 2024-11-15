@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function moveToTop(event) {
-        const clickedImage = event.currentTarget;
+        const clickedImage = event.currentTarget.querySelector('.image-item');
         const label = clickedImage.dataset.label;
 
         let recentClicks = JSON.parse(localStorage.getItem('recentClicks')) || [];
@@ -20,15 +20,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         localStorage.setItem('recentClicks', JSON.stringify(recentClicks));
         loadOrder();
-
-        const newUrl = clickedImage.dataset.redirectUrl;
-        window.location.href = newUrl;
     }
 
     function loadOrder() {
         const recentClicks = JSON.parse(localStorage.getItem('recentClicks')) || [];
         recentClicks.reverse().forEach(label => {
-            const item = document.querySelector(`.image-item[data-label="${label}"]`);
+            const item = document.querySelector(`.image-item[data-label="${label}"]`).parentNode;
             if (item) container.prepend(item);
         });
     }
@@ -38,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('search').addEventListener('input', filterItems);
 
     document.querySelectorAll('.image-item').forEach(item => {
-        item.addEventListener('click', moveToTop);
+        item.parentNode.addEventListener('click', moveToTop);
     });
 
     loadOrder();
