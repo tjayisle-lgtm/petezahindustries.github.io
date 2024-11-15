@@ -19,13 +19,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (recentClicks.length > 10) recentClicks.pop();
 
         localStorage.setItem('recentClicks', JSON.stringify(recentClicks));
-        loadOrder();
     }
 
     function loadOrder() {
         const recentClicks = JSON.parse(localStorage.getItem('recentClicks')) || [];
-        recentClicks.reverse().forEach(label => {
-            const item = document.querySelector(`.image-item[data-label="${label}"]`).parentNode;
+        recentClicks.forEach(label => {
+            const item = document.querySelector(`.image-item[data-label="${label}"]`)?.parentNode;
             if (item) container.prepend(item);
         });
     }
