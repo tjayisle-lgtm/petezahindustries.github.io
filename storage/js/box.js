@@ -20,6 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         localStorage.setItem('recentClicks', JSON.stringify(recentClicks));
         loadOrder();
+
+        const newUrl = clickedImage.dataset.redirectUrl;
+        window.location.href = newUrl;
     }
 
     function loadOrder() {
@@ -29,6 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if (item) container.prepend(item);
         });
     }
+
+    window.scrollTo(0, 0);
 
     document.getElementById('search').addEventListener('input', filterItems);
 
