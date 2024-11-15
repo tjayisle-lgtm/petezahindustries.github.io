@@ -1,14 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.querySelector('.container');
 
-    function filterItems() {
-        const searchInput = document.getElementById('search').value.toLowerCase();
-        document.querySelectorAll('.image-item').forEach(item => {
-            const label = item.dataset.label.toLowerCase();
-            item.style.display = label.includes(searchInput) ? '' : 'none';
-        });
-    }
-
     function moveToTop(event) {
         const clickedImage = event.currentTarget.querySelector('.image-item');
         const label = clickedImage.dataset.label;
@@ -29,13 +21,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    window.scrollTo(0, 0);
-
-    document.getElementById('search').addEventListener('input', filterItems);
-
     document.querySelectorAll('.image-item').forEach(item => {
         item.parentNode.addEventListener('click', moveToTop);
     });
 
     loadOrder();
 });
+
