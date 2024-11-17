@@ -24,29 +24,30 @@ body {
     transition: 0.3s;
 }
 
-#search-button {
-    padding: 20px 25px;
-    margin-left: 5px;
+input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 16px;
     border: none;
-    background-color: #141415;
     color: #fff;
+    background-color: #141414;
     border-radius: 50px;
-    cursor: pointer;
-    font-family: "Outfit", sans-serif;
-    transition: background-color 0.3s;
 }
 
-#search-button:hover {
-    background-color: #555;
-}
-
-.content-wrapper {
-    padding-top: 50px;
-}
-
-iframe {
-    width: 100vw;
-    height: calc(100vh - 7vh);
+.search-button {
+    padding: 20px 20px;
+    background-color: #141414;
+    color: white;
+    font-size: 16px;
     border: none;
-    display: block;
+    border-radius: 50px;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.search-button:hover {
+    background-color: #555;
 }

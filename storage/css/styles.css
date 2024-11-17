@@ -23,7 +23,6 @@ body {
 h1 {
     font-size: 2.2em;
     margin: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .navbar {
@@ -190,7 +189,7 @@ h1 {
     color: white;
 }
 
-.buttons=container {
+.buttons-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; 
@@ -287,6 +286,7 @@ iframe {
 i {
     color: #fff;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 i:hover {

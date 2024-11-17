@@ -43,10 +43,21 @@
         </div>
     </div>
 
-    <div class="content-wrapper">
-        <iframe src="/static/index.html"></iframe>
-    </div>
+    <form id="uv-form" onsubmit="submitSearch(event)">
+        <h1 style="padding-top: 100px;">Brucite</h1>
+        <p>Gyatt skibidi proxy test!</p>
+        <input id="uv-address" type="text" class="search-bar-home" placeholder="Start by inputting a link or searching with UV..." required>
+        <button class="search-button" type="submit" id="search-button">
+            SEARCH <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+    </form>
 
+    <script src="/static/loader.js"></script>
+    <script src="/static/uv/uv.bundle.js" defer></script>
+    <script src="/static/uv/uv.config.js" defer></script>
+    <script src="/static/register-sw.js" defer></script>
+    <script src="/static/search.js" defer></script>
+    <script src="/static/index.js" defer></script>
     <script src="/storage/js/script.js"></script>
     <script src="/storage/js/cloak.js"></script>
     <script src="/storage/js/data.js"></script>
