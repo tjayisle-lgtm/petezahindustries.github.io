@@ -200,12 +200,12 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; 
-    gap: 30px; 
+    gap: 20px; 
 }
 
 .image-item {
     position: relative;
-    width: 170px;
+    width: 200px;
     height: 170px;
     overflow: hidden;
     transition: transform 0.3s;
