@@ -327,6 +327,82 @@ i:hover {
     margin: 20px;
 }
 
+.review-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+    color: #fff;
+}
+
+.review-box {
+    background-color: #141414; 
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px; 
+    height: 200px; 
+    position: relative;
+    margin: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.review-box:hover {
+    transform: scale(1.1);
+}
+
+.review-box p {
+    font-size: 16px;
+    color: #fff; 
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+.review-box .bottom-left {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.review-box h6 {
+    margin: 0;
+    font-size: 14px;
+    color: #fff;
+}
+
+hr {
+    width: 50%;
+    height: 2px;
+    background-color: #fff;
+    border: none;
+    margin: 20px auto;
+}
+
+.container-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15;
+}
+
+.text-box {
+    width: 500px;
+    padding: 20px;
+    border: none;
+    background-color: #141414;
+    border-radius: 10px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
 ::-webkit-scrollbar {
     width: 0px;
 }
