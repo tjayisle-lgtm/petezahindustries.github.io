@@ -2,7 +2,7 @@ const chatContainer = document.getElementById('chat-container');
 const userInput = document.getElementById('user-input');
 const sendButton = document.getElementById('send-button');
 
-const apiKey = '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';
+const apiKey = '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';
 let messageHistory = [
     { role: "system", content: "You are a helpful AI assistant." }
 ];
