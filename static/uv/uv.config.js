@@ -1,5 +1,5 @@
 self.__uv$config = {
-    prefix: '/static/brunys/ixl/work/',
+    prefix: '/pete/zah/industries',
     bare:'https://static.99.135.156.178.clients.your-server.de/bare/',
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
