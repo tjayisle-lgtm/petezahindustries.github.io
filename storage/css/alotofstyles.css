@@ -6,7 +6,7 @@ body {
     margin: 0;
     font-family: "Outfit", sans-serif;
     text-align: center;
-    background-color: #0d0d0d;
+    background-color: #A9A9A9;
     overflow-x: hidden;
 }
 
@@ -20,17 +20,6 @@ body {
     text-align: center;
     background-color: #0d0d0d;
     color: #fff;
-    position: relative;
-}
-
-.scroll-down-btn {
-    position: absolute;
-    bottom: 20px;
-    background-color: transparent;
-    border: none;
-    color: #fff;
-    font-size: 24px;
-    cursor: pointer;
 }
         
 h1 {
@@ -42,60 +31,63 @@ h1 {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    background-color: rgba(20, 20, 20, 0.9);
-    backdrop-filter: blur(10px); 
+    right: 0;
+    background-color: rgba(20, 20, 20, 0.9); 
+    backdrop-filter: blur(5px);
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 4px 25px;
-    z-index: 99999;
-  }
+    align-items: center;
+    padding: 5px 20px;
+    z-index: 9999;
+}
 
-  .navbar-left {
+.navbar-left {
     display: flex;
     align-items: center;
-  }
+}
 
-  .navbar-left img {
+.navbar-left a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo {
     width: 40px;
     height: 40px;
     margin-right: 10px;
-    cursor: pointer;
-    border-radius: 100px;
-  }
+    border-radius: 100%;
+}
 
-  .navbar-left p {
-    font-family: "Outfit", sans-serif;
-    font-size: 1.2rem;
+.nav-text {
     color: white;
+    font-size: 18px;
     margin: 0;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-  }
-  
-  .navbar-right {
-    margin-right: 50px;
-    display: flex;
-    gap: 15px;
-  }
+}
 
-  .navbar-right button {
-    background-color: transparent;
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-button {
+    background-color: #1A1A1A;
     border: none;
-    color: #fff;
-    font-size: 1.2rem;
+    border-radius: 15px;
+    color: white;
+    font-size: 20px;
     cursor: pointer;
     padding: 10px;
-    border-radius: 100px;
-    transition: background-color 0.3s ease;
-  }
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
 
-  .navbar-right button:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-  }
+.nav-button:hover {
+    background-color: #555;
+}
 
-.sigma, .discord {
+.sigma {
     padding: 20px 25px;
     background-color: #141414;
     color: white;
@@ -108,6 +100,17 @@ h1 {
 
 .sigma:hover {
     background: #555;
+}
+
+.discord {
+    padding: 20px 25px;
+    background-color: #141414;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    margin: 4px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 
 .discord:hover {
@@ -204,7 +207,7 @@ h1 {
 
 .image-item {
     position: relative;
-    width: 195px;
+    width: 200px;
     height: 170px;
     overflow: hidden;
     transition: transform 0.3s;
@@ -234,10 +237,10 @@ h1 {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(20, 20, 20, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -288,6 +291,10 @@ i {
     cursor: pointer;
 }
 
+i:hover {
+    color: #ccc;
+}
+
 .ads-container {
     display: flex;
     flex-wrap: wrap;
@@ -304,11 +311,6 @@ i {
     width: 500px;
     height: 200px;
     border-radius: 8px;
-    transition: 0.2s ease-in-out;
-}
-
-.image-link img:hover {
-    transform: translateY(-10px);
 }
 
 .box {
@@ -318,11 +320,6 @@ i {
     padding: 20px;
     margin: 10px;
     width: 20vw;
-    transition: 0.2s ease-in-out;
-}
-
-.box:hover {
-    transform: translateY(-10px);
 }
 
 .container-settings {
