@@ -1,5 +1,5 @@
 # Pete Zah Games
-A unblocked gaming site for you that self hosts over 120+ games from reliable sources.
+A unblocked gaming site for you that self hosts over 200+ games from reliable sources.
 
 
 ## Pete Zah Games Purpose?
@@ -11,8 +11,9 @@ Youre mainly supposed to use our site at places that have restrictions.
 - Our biggest contributer is Brunysixlwork:  He provided the styling and helped with the proxy
 - We use Szvy Central's proxy server
 - We use games from Math 66 Games and the old Selenete.cc
+- We owe our now.gg app and games to Frogie's Arcade
 
 ## Summary
 Pete Zah Games is a unblocked games and proxy service meant for you to use at school or work but you can use it at home to. Pete Zah Games provides many games which are all self hosted meaning all content is stored in the website.
 
-![logo](./logo.png
+
