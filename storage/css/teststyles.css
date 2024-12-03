@@ -6,7 +6,7 @@ body {
     margin: 0;
     font-family: "Outfit", sans-serif;
     text-align: center;
-    background-color: #0d0d0d;
+    background-image: url("images/images/rectangle.jpeg");
     overflow-x: hidden;
 }
 
@@ -20,17 +20,6 @@ body {
     text-align: center;
     background-color: #0d0d0d;
     color: #fff;
-    position: relative;
-}
-
-.scroll-down-btn {
-    position: absolute;
-    bottom: 20px;
-    background-color: transparent;
-    border: none;
-    color: #fff;
-    font-size: 24px;
-    cursor: pointer;
 }
         
 h1 {
@@ -38,47 +27,67 @@ h1 {
     margin: 0;
 }
 
-.side-navbar {
-    z-index: 999;
-    height: 100%;
-    width: 60px; 
+.navbar {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #141414;
-    overflow-x: hidden;
-    padding-top: 20px;
+    right: 0;
+    background-color: rgba(20, 20, 20, 0.9); 
+    backdrop-filter: blur(5px);
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    z-index: 9999;
+}
+
+.navbar-left {
+    display: flex;
     align-items: center;
 }
 
-.side-navbar a {
-    padding: 15px 0;
+.navbar-left a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    color: #fff;
-    display: block;
-    text-align: center;
-    width: 100%;
-    transition: background-color 0.3s;
 }
 
-.side-navbar a:hover {
-    background-color: #575757;
-}
-
-.side-navbar a i {
-    font-size: 24px; 
-}
-
-.side-navbar img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
     border-radius: 100%;
 }
 
-.sigma, .discord {
+.nav-text {
+    color: white;
+    font-size: 18px;
+    margin: 0;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-button {
+    background-color: #1A1A1A;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.nav-button:hover {
+    background-color: #555;
+}
+
+.sigma {
     padding: 20px 25px;
     background-color: #141414;
     color: white;
@@ -91,6 +100,17 @@ h1 {
 
 .sigma:hover {
     background: #555;
+}
+
+.discord {
+    padding: 20px 25px;
+    background-color: #141414;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    margin: 4px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 
 .discord:hover {
@@ -179,7 +199,6 @@ h1 {
 }
 
 .container {
-    margin-left: 70px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center; 
@@ -188,8 +207,8 @@ h1 {
 
 .image-item {
     position: relative;
-    width: 190px;
-    height: 190px;
+    width: 200px;
+    height: 170px;
     overflow: hidden;
     transition: transform 0.3s;
     border-radius: 10px;
@@ -215,26 +234,16 @@ h1 {
 
 .label {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
-    bottom: 0;
-    background-color: rgba(20, 20, 20, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    padding: 10px;
-    border-radius: 10px;
-    opacity: 0; /* Hide the label by default */
-    transition: opacity 0.3s;
+    padding: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
-
-.image-item:hover .label {
-    opacity: 1; /* Show the label on hover */
-}
-
 
 .container-iframe {
     display: flex;
@@ -282,6 +291,10 @@ i {
     cursor: pointer;
 }
 
+i:hover {
+    color: #ccc;
+}
+
 .ads-container {
     display: flex;
     flex-wrap: wrap;
@@ -298,11 +311,6 @@ i {
     width: 500px;
     height: 200px;
     border-radius: 8px;
-    transition: 0.2s ease-in-out;
-}
-
-.image-link img:hover {
-    transform: translateY(-10px);
 }
 
 .box {
@@ -312,11 +320,6 @@ i {
     padding: 20px;
     margin: 10px;
     width: 20vw;
-    transition: 0.2s ease-in-out;
-}
-
-.box:hover {
-    transform: translateY(-10px);
 }
 
 .container-settings {
@@ -400,6 +403,10 @@ hr {
     border-radius: 10px;
     color: #fff;
     font-family: Arial, sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
 }
 
 .l-box {
