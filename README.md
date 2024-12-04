@@ -5,7 +5,7 @@ A unblocked gaming site for you that self hosts over 200+ games from reliable so
 ## Pete Zah Games Purpose?
 We are mainly a service that provides games completely self hosted but we also have a proxy!
 
-Youre mainly supposed to use our site at places that have restrictions.
+You're mainly supposed to use our site at places that have restrictions.
 
 ## Pete Zah Games Sourced
 - Our biggest contributer is Brunysixlwork:  He provided the styling and helped with the proxy
