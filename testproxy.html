@@ -1,6 +1,7 @@
 
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
         <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-TFZ72L5FPQ"></script>
 <script>
@@ -13,9 +14,12 @@
     <title>Pete Zah | Proxy</title>
     <link rel="icon" type="image/x-icon" href="/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="/storage/css/footer.css">
     <link rel="stylesheet" href="/storage/css/styles.css">
-    <link rel="stylesheet" href="/storage/css/evenmoremorestyles.css">
+    <link rel="stylesheet" href="/storage/css/evenmorestyles.css">
+    <link rel="stylesheet" href="/storage/css/footer.css">
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6640595376330309"
+     crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -25,34 +29,107 @@
             <div class="dot"></div>
             <div class="dot"></div>
         </div>
-        <h5 id="fetching-text">Fetching Assets</h5>
+        <h5 id="fetching-text">Fetching assets</h5>
     </div>
 
-    <nav class="navbar">
-        <div class="left-nav">
+    <div class="navbar">
+        <div class="navbar-left">
             <a href="/">
-                <img src="/logo.png" alt="Logo" class="logo">
-                <h3>Pete Zah</h3>
+                <img src="/logo.png" class="logo">
+                <p class="nav-text">Pete Zah</p>
             </a>
         </div>
-
-        <div class="right-nav">
-            <a href="/games.html"><i class="fa-solid fa-gamepad"></i></a>
-            <a href="/apps.html"><i class="fa-solid fa-table-cells"></i></a>
-            <a href="/proxy.html"><i class="fa-solid fa-globe"></i></a>
-            <a href="/extra.html"><i class="fa-solid fa-plus"></i></a>
-            <a href="/settings.html"><i class="fa-solid fa-gear"></i></a>
+        <div class="navbar-right">
+            <a href="/games.html" class="nav-button"><i class="fas fa-gamepad"></i></a>
+            <a href="/apps.html" class="nav-button"><i class="fas fa-th"></i></a>
+            <a href="/proxy.html" class="nav-button"><i class="fas fa-globe"></i></a>
+            <a href="/ai.html" class="nav-button"><i class="fa-solid fa-robot"></i></a>
+            <a href="/extra.html" class="nav-button"><i class="fas fa-plus"></i></a>
+            <a href="/settings.html" class="nav-button"><i class="fas fa-cog"></i></a>
         </div>
-    </nav>
+    </div>
 
-    <iframe style="border-radius: 0;" id="iframe" src="/static/testindex.html" frameborder="0"></iframe>
+<h1 style="margin: 0; padding-top: 40px;">Pete Zah</h1>
+    <p id="dynamicParagraph">gyatt</p>
 
+    <div id="search-container">
+        <form id="uv-form">
+            <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden"/>
+            <input id="uv-address" type="text" class="search-bar-home" placeholder="Start by inputting a link or searching with UV..." />
+            <button id="search-button" onclick="submitSearch()">SEARCH <i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+         
+        <div class="desc left-margin">
+            <p id="uv-error"></p>
+            <pre id="uv-error-code"></pre>
+        </div>
+    </div>
+
+    <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+        <a href="/static/embed.html#https://tiktok.com" style="display: inline-block;">
+            <img src="/storage/load/tiktok/IMG_5335.png" style="width: 30px; height: 30px; border-radius: 50%; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">
+        </a>
+        <a href="/static/embed.html#https://twitch.tv" style="display: inline-block;">
+            <img src="/storage/load/twitch/IMG_5336.png" style="width: 30px; height: 30px; border-radius: 50%; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">
+        </a>
+        <a href="/static/embed.html#https://google.com" style="display: inline-block;">
+            <img src="/storage/load/google/IMG_5324.webp" style="width: 30px; height: 30px; border-radius: 50%; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">
+        </a>
+        <a href="/static/embed.html#https://now.gg" style="display: inline-block;">
+            <img src="/storage/load/nowgg/IMG_5325.png" style="width: 30px; height: 30px; border-radius: 50%; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'">
+        </a>
+    </div>
+
+    <script src="/static/uv/uv.bundle.js" defer></script>
+    <script src="/static/uv/uv.config.js" defer></script>
+    <script src="/static/register-sw.js" defer></script>
+    <script src="/static/search.js" defer></script>
+    <script src="/static/index.js" defer></script>
+
+    <script>
+        const phrases = [
+            "Pete Zah best unblocked games ever!",
+            "https://petezahindustries.github.io",
+            "Made by Pete Zah",
+            "Also try Jade Proxy!",
+            "still active despite being inactive for months ¯\\_(ツ)_/¯",
+            "Roblox should now work my eskibidi sigmets",
+            "IVE EDGED TO Pete Zah -idkiguess",
+            "iris has voice revealed once -iris"
+        ];
+
+        const paragraph = document.getElementById('dynamicParagraph');
+
+        function changeText() {
+            const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
+            paragraph.textContent = randomPhrase;
+        }
+
+        paragraph.addEventListener('click', changeText);
+        window.onload = changeText;
+    </script>
+
+    <script src="/static/loader.js"></script>
+    <script src="/static/uv/uv.bundle.js" defer></script>
+    <script src="/static/uv/uv.config.js" defer></script>
+    <script src="/static/register-sw.js" defer></script>
+    <script src="/static/search.js" defer></script>
+    <script src="/static/index.js" defer></script>
     <script src="/storage/js/script.js"></script>
     <script src="/storage/js/cloak.js"></script>
     <script src="/storage/js/data.js"></script>
     <script src="/storage/js/settings.js"></script>
 
- <footer>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+    <footer>
     <div class="footerContainer">
         <div class="socialIcons">
             <a href=""><i class="fa-brands fa-facebook"></i></a>
@@ -80,12 +157,3 @@
 </footer>
 </body>
 </html>
-
-<meta property="og:title" content="BrunysIXLWork | Proxy">
-    <meta property="og:description" content="Brucite, a sophisticated web proxy that lets you search the web without any restrictions.">
-    <meta property="og:image" content="/storage/images/main/logo.png">
-    <meta property="og:image:width" content="100">
-    <meta property="og:image:height" content="100">
-    <meta property="og:url" content="https://brunysixlwork.site">
-    <meta name="theme-color" content="#0d0d0d">
-    <meta name="msapplication-TileColor" content="#0d0d0d">
