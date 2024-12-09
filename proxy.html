@@ -89,7 +89,28 @@
     <script src="/static/search.js" defer></script>
     <script src="/static/index.js" defer></script>
 
-    
+    <script>
+        const phrases = [
+            "Pete Zah best unblocked games ever!",
+            "https://petezahindustries.github.io",
+            "Made by Pete Zah",
+            "Also try Jade Proxy!",
+            "still active despite being inactive for months ¯\\_(ツ)_/¯",
+            "Roblox should now work my eskibidi sigmets",
+            "IVE EDGED TO Pete Zah -idkiguess",
+            "iris has voice revealed once -iris"
+        ];
+
+        const paragraph = document.getElementById('dynamicParagraph');
+
+        function changeText() {
+            const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
+            paragraph.textContent = randomPhrase;
+        }
+
+        paragraph.addEventListener('click', changeText);
+        window.onload = changeText;
+    </script>
 
     <script src="/static/loader.js"></script>
     <script src="/static/uv/uv.bundle.js" defer></script>
@@ -134,31 +155,6 @@
     <div class="footerBottom">
         <p>Copyright &copy;2024; Designed by <span class="designer">Pete Zah</span></p>  <br>
         </div>
-</footer>
-
-
-        <script>
-        const phrases = [
-            "Pete Zah best unblocked games ever!",
-            "https://petezahindustries.github.io",
-            "Made by Pete Zah",
-            "Also try Jade Proxy!",
-            "still active despite being inactive for months ¯\\_(ツ)_/¯",
-            "Roblox should now work my eskibidi sigmets",
-            "IVE EDGED TO Pete Zah -idkiguess",
-            "iris has voice revealed once -iris"
-        ];
-
-        const paragraph = document.getElementById('dynamicParagraph');
-
-        function changeText() {
-            const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
-            paragraph.textContent = randomPhrase;
-        }
-
-        paragraph.addEventListener('click', changeText);
-        window.onload = changeText;
-    </script>
-        
+</footer>      
 </body>
 </html>
