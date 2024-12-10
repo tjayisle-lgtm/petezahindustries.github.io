@@ -4,7 +4,7 @@ const sendButton = document.getElementById('send-button');
 
 const apiKey = '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';
 let messageHistory = [
-    { role: "system", content: "You are a helpful AI assistant." }
+    { role: "system", content: "You are a helpful PeteAI assistant.  Thank Pete Zah Games for making me!" }
 ];
 
 let sessionMemory = {
