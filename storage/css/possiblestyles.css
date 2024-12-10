@@ -1,3 +1,5 @@
+CSS
+
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&display=swap');
 
 /* Base Styles */
@@ -6,9 +8,11 @@ html, body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Outfit', sans-serif;
-  color: #f0f0f0; /* Off-White */
-  background-color: #282c34; /* Deep Space Gray with a hint of blue */
+  color: #fff;
+  background-color: #181818; /* Deep Space Gray */
   overflow-x: hidden;
+  font-size: 16px; /* Base font size */
+  line-height: 1.6;
 }
 
 /* Typography */
@@ -18,8 +22,14 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 3px;
   margin: 0;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
-  color: #ffd700; /* Gold color */
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.2); /* Cyan glow */
+  color: #00ffff; /* Cyan for a vibrant touch */
+  animation: titleGlow 1.5s infinite alternate;
+}
+
+@keyframes titleGlow {
+  0% { text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
+  100% { text-shadow: 0 0 10px rgba(0, 255, 255, 0.5); } /* Cyan glow */
 }
 
 /* Navbar */
@@ -76,17 +86,30 @@ h1 {
 }
 
 .nav-button {
-  background-color: transparent;
-  border: none;
-  color: #ffd700; /* Gold color */ 
-  font-size: 1.2rem; 
-  cursor: pointer;
-  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
 }
 
-.nav-button:hover {
-  color: #ffffff; /* White on hover */
-  transform: scale(1.05); 
+.nav-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: #00ffff; /* Cyan */
+  transition: height 0.3s ease-in-out;
+}
+
+.nav-button:hover::before {
+  height: 100%;
+}
+
+.nav-button span {
+  color: #f0f0f0; 
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Hero Section */
@@ -117,8 +140,8 @@ h1 {
 /* Buttons */
 .primary-button {
   padding: 1.5rem 3rem;
-  background-color: #ffd700; /* Gold */
-  color: #282c34; /* Deep Space Gray */
+  background: linear-gradient(45deg, #FF5733, #F44336); /* Orange gradient */
+  color: #121212; 
   border: none;
   border-radius: 5px;
   margin: 0.5rem;
@@ -128,7 +151,7 @@ h1 {
 }
 
 .primary-button:hover {
-  background-color: #c79c00; /* Darker Gold */
+  background: linear-gradient(45deg, #F44336, #FF5733); /* Reverse gradient on hover */
   transform: translateY(-3px); 
 }
 
