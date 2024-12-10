@@ -6,8 +6,8 @@ html, body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Outfit', sans-serif;
-  color: #fff;
-  background-color: #121212; /* Deep Space Gray */
+  color: #f0f0f0; /* Off-White */
+  background-color: #181818; /* Deep Space Gray */
   overflow-x: hidden;
 }
 
@@ -19,7 +19,7 @@ h1 {
   letter-spacing: 2px;
   margin: 0;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
-  color: #fff; /* Bright white for the title */
+  color: #00ffff; /* Cyan for a vibrant touch */
 }
 
 /* Navbar */
@@ -63,7 +63,7 @@ h1 {
 }
 
 .nav-text {
-  color: #fff;
+  color: #f0f0f0; /* Off-White */
   font-size: 1.2rem;
   margin: 0;
   font-weight: 600;
@@ -78,7 +78,7 @@ h1 {
 .nav-button {
   background-color: transparent;
   border: none;
-  color: #fff; 
+  color: #f0f0f0; /* Off-White */
   font-size: 1.1rem;
   cursor: pointer;
   transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
@@ -87,24 +87,6 @@ h1 {
 .nav-button:hover {
   color: #777;
   transform: scale(1.05); 
-}
-
-/* Buttons */
-.primary-button {
-  padding: 1.5rem 3rem;
-  background-color: rgba(255, 255, 255, 0.1); /* Subtle white overlay */
-  color: #fff;
-  border: 1px solid #fff; /* Thin white border */
-  border-radius: 5px;
-  margin: 0.5rem;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out; 
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
-}
-
-.primary-button:hover {
-  background-color: rgba(255, 255, 255, 0.2); /* Slightly more opaque on hover */
-  transform: translateY(-3px); 
 }
 
 /* Hero Section */
@@ -132,6 +114,25 @@ h1 {
   background-color: rgba(0, 0, 0, 0.6); /* Slightly darker overlay */
 }
 
+/* Buttons */
+.primary-button {
+  padding: 1.5rem 3rem;
+  background-color: #FF5733; /* Vivid orange */
+  color: #121212; /* Dark Gray text */
+  border: 2px solid #FF5733; /* Orange border */
+  border-radius: 5px;
+  margin: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out; 
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.primary-button:hover {
+  background-color: transparent; 
+  color: #FF5733; /* Inverted colors on hover */
+  border-color: #FF5733; 
+}
+
 /* Review Section */
 .review-container {
   display: grid;
@@ -142,7 +143,7 @@ h1 {
 }
 
 .review-box {
-  background-color: rgba(255, 255, 255, 0.05); 
+  background-color: rgba(255, 255, 255, 0.02); /* Very subtle white overlay */
   padding: 2rem;
   border-radius: 10px;
   text-align: center;
@@ -157,7 +158,7 @@ h1 {
 
 .review-box p {
   font-size: 1.1rem;
-  color: #ccc; 
+  color: #b0b0b0; /* Slightly warmer gray */
   margin: 1rem 0;
 }
 
@@ -197,7 +198,7 @@ hr {
   padding: 2rem;
   border: 1px solid #333; 
   border-radius: 10px;
-  color: #ccc;
+  color: #b0b0b0; /* Slightly warmer gray */
   font-size: 1.1rem;
   line-height: 1.6; 
 }
