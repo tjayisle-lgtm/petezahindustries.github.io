@@ -30,6 +30,7 @@ body {
 h1 {
     font-size: 2.2em;
     margin: 0;
+    animation: titleGlow 1.5s infinite alternate; /* Add title animation */
 }
 
 .navbar {
