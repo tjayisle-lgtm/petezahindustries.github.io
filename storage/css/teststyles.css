@@ -7,7 +7,7 @@ html, body {
   box-sizing: border-box;
   font-family: 'Outfit', sans-serif;
   color: #f0f0f0; /* Off-White */
-  background-color: #1e272e; /* Deep Navy Blue */
+  background-color: #282c34; /* Deep Space Gray with a hint of blue */
   overflow-x: hidden;
 }
 
@@ -19,13 +19,7 @@ h1 {
   letter-spacing: 3px;
   margin: 0;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
-  color: #00ffff; /* Cyan for a vibrant touch */
-  animation: titleGlow 1.5s infinite alternate; /* Subtle glow effect */
-}
-
-@keyframes titleGlow {
-  0% { text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
-  100% { text-shadow: 0 0 10px rgba(0, 255, 255, 0.5); } /* Cyan glow */
+  color: #ffd700; /* Gold color */
 }
 
 /* Navbar */
@@ -84,14 +78,14 @@ h1 {
 .nav-button {
   background-color: transparent;
   border: none;
-  color: #f0f0f0; 
-  font-size: 1.1rem;
+  color: #ffd700; /* Gold color */ 
+  font-size: 1.2rem; 
   cursor: pointer;
   transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .nav-button:hover {
-  color: #777;
+  color: #ffffff; /* White on hover */
   transform: scale(1.05); 
 }
 
@@ -123,9 +117,9 @@ h1 {
 /* Buttons */
 .primary-button {
   padding: 1.5rem 3rem;
-  background-color: #FF5733; /* Vivid orange */
-  color: #121212; 
-  border: 2px solid #FF5733; 
+  background-color: #ffd700; /* Gold */
+  color: #282c34; /* Deep Space Gray */
+  border: none;
   border-radius: 5px;
   margin: 0.5rem;
   cursor: pointer;
@@ -134,9 +128,8 @@ h1 {
 }
 
 .primary-button:hover {
-  background-color: transparent; 
-  color: #FF5733; 
-  border-color: #FF5733; 
+  background-color: #c79c00; /* Darker Gold */
+  transform: translateY(-3px); 
 }
 
 /* Review Section */
@@ -155,7 +148,7 @@ h1 {
   text-align: center;
   position: relative;
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle box-shadow */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .review-box:hover {
