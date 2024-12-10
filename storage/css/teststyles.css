@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&display=swap');
+
+/* Base Styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  font-family: 'Outfit', sans-serif;
+  color: #fff;
+  background-color: #0d0d0d;
+  overflow-x: hidden;
+}
+
+/* Typography */
+h1 {
+  font-size: 2.2em;
+  margin: 0;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(20, 20, 20, 0.9); 
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  z-index: 9999;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.nav-text {
+  color: white;
+  font-size: 18px;
+  margin: 0;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-button {
+  background-color: #1A1A1A;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.nav-button:hover {
+  background-color: #555;
+}
+
+/* Buttons */
+.sigma, .discord {
+  padding: 20px 25px;
+  background-color: #141414;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  margin: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.sigma:hover {
+  background: #555;
+}
+
+.discord:hover {
+  background: #5865F2; 
+  color: #000;
+}
+
+/* Loading Screen */
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0d0d0d;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9998;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+  background-color: white;
+  border-radius: 50%;
+  animation: bounce 0.6s infinite alternate;
+}
+
+.dot:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+#fetching-text {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Hero Section */
+.banner {
+  width: 100%;
+  height: calc(100vh - 0px); /* Consider using vh units more consistently */
+  display: flex;
+  flex-direction: column;    
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #0d0d0d;
+  color: #fff;
+}
+
+/* Review Section */
+.review-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 80%;
+  margin: auto;
+  color: #fff;
+}
+
+.review-box {
+  background-color: #141414; 
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  width: 250px; 
+  height: 200px; 
+  position: relative;
+  margin: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.review-box:hover {
+  transform: scale(1.1);
+}
+
+.review-box p {
+  font-size: 16px;
+  color: #fff; 
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.review-box .bottom-left {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.review-box h6 {
+  margin: 0;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* FAQ Section */
+hr {
+  width: 50%;
+  height: 2px;
+  background-color: #fff;
+  border: none;
+  margin: 20px auto;
+}
+
+.container-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.text-box {
+  width: 500px;
+  padding: 20px;
+  border: none;
+  background-color: #141414;
+  border-radius: 10px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Scrollbar Hiding */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* General Styles */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 20px; 
+}
+
+.buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 5px; 
+}
+
+/*
+ * Add more specific styles for other sections 
+ * (e.g., .image-item, .container-iframe, .ads-container, etc.)
+ * here.
+ */
