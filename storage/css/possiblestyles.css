@@ -6,7 +6,8 @@ body {
     margin: 0;
     font-family: "Outfit", sans-serif;
     text-align: center;
-    background-color: #0d0d0d;
+    background-image: url("images/images/background.jpg");
+    background-color: #4c4c4c;
     overflow-x: hidden;
 }
 
