@@ -23,8 +23,23 @@ body {
 }
         
 h1 {
-    font-size: 2.2em;
+    font-size: 3em; /* Increased font size */
     margin: 0;
+    color: transparent; /* Make text transparent for gradient */
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    background-image: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #9400d3); 
+    font-family: 'Kanit', sans-serif; /* Using Kanit font */
+}
+
+p {
+    font-size: 1.5em; /* Increased font size */
+    color: transparent; /* Make text transparent for gradient */
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    background-image: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #9400d3); 
+    font-family: 'Kanit', sans-serif; /* Using Kanit font */
+    margin: 20px 0; /* Added some margin */
 }
 
 .navbar {
