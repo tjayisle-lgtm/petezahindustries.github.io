@@ -17,9 +17,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-image: url('/images/images/back.jpeg'); /* Change to use background image */
-    background-size: cover; /* Adjust background size as needed */
-    background-position: center; /* Adjust background position as needed */
+    background-color: #2f2f2f;
     color: #fff;
 }
         
