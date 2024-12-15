@@ -24,7 +24,7 @@ body {
 }
         
 .banner h1 {
-    font-size: 3em; /* Increased font size */
+    font-size: 2.2em;
     margin: 0;
     color: transparent; /* Make text transparent for gradient */
     -webkit-background-clip: text; 
@@ -33,12 +33,11 @@ body {
 }
 
 .banner p {
-    font-size: 1.5em; /* Increased font size */
+    font-size: 1em; /* Same font size */
     color: transparent; /* Make text transparent for gradient */
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent; 
     background-image: linear-gradient(to right, #95dbdb, #bae4e4, #e4f4f4, #ffffff, #bae4e4, #95dbdb); 
-    margin: 20px 0; /* Added some margin */
 }
 
 .navbar {
