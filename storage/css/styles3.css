@@ -28,7 +28,7 @@ body {
     color: transparent; /* Make text transparent for gradient */
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent; 
-    background-image: linear-gradient(to right, #daecec, #e2f0f0, #e9f7f7, #fafbfb, #e2f0f0, #daecec); 
+    background-image: linear-gradient(to right, #95dbdb, #bae4e4, #e4f4f4, #ffffff, #bae4e4, #95dbdb); 
     font-family: 'Kanit', sans-serif; /* Using Kanit font */
 }
 
@@ -37,7 +37,7 @@ body {
     color: transparent; /* Make text transparent for gradient */
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent; 
-    background-image: linear-gradient(to right, #daecec, #e2f0f0, #e9f7f7, #fafbfb, #e2f0f0, #daecec); 
+    background-image: linear-gradient(to right, #95dbdb, #bae4e4, #e4f4f4, #ffffff, #bae4e4, #95dbdb); 
     font-family: 'Kanit', sans-serif; /* Using Kanit font */
     margin: 20px 0; /* Added some margin */
 }
