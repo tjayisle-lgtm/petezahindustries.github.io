@@ -29,7 +29,6 @@ body {
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent; 
     background-image: linear-gradient(to right, #68b7b8, #95dbdb, #e4f4f4, #ffffff, #95dbdb, #68b7b8); 
-    font-family: 'Kanit', sans-serif; /* Using Kanit font */
 }
 
 .banner p {
@@ -38,7 +37,6 @@ body {
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent; 
     background-image: linear-gradient(to right, #95dbdb, #bae4e4, #e4f4f4, #ffffff, #bae4e4, #95dbdb); 
-    font-family: 'Kanit', sans-serif; /* Using Kanit font */
     margin: 20px 0; /* Added some margin */
 }
 
