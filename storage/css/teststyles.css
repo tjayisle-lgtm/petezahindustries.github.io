@@ -7,10 +7,10 @@
 
 /* Body and basic styling */
 body {
-    font-family: 'Arial', sans-serif; /* Clean modern font */
+    font-family: 'Poppins', sans-serif; /* Modern and clean font */
     line-height: 1.6;
-    background-color: #0e0e0e; /* Dark background */
-    color: #ffffff; /* White text for contrast */
+    background-color: #121212; /* Dark background for modern look */
+    color: #f0f0f0; /* Soft white text for contrast */
 }
 
 /* Loading Screen */
@@ -23,7 +23,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(14, 14, 14, 0.95); /* Semi-transparent dark background */
+    background-color: rgba(18, 18, 18, 0.95); /* Dark semi-transparent background */
     z-index: 999;
 }
 
@@ -47,10 +47,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1a1a1a; /* Darker navbar */
+    background-color: #1f1f1f; /* Darker navbar */
     color: #ffffff;
-    padding: 15px 30px; /* Increased padding for a cozy feel */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Added shadow for depth */
+    padding: 20px; /* Increased padding for a cozy feel */
+    border-radius: 20px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Added shadow for depth */
 }
 
 .navbar-left {
@@ -59,14 +60,14 @@ body {
 }
 
 .logo {
-    height: 40px;
+    height: 50px; /* Slightly larger logo */
 }
 
 .nav-button {
     color: #ffffff; /* Light text */
-    margin-left: 20px;
+    margin-left: 30px; /* More space between buttons */
     text-decoration: none;
-    font-size: 1.2em; /* Slightly larger buttons for prominence */
+    font-size: 1.1em; /* Slightly larger buttons for prominence */
     transition: color 0.3s; /* Smooth color transition */
 }
 
@@ -77,15 +78,16 @@ body {
 /* Banner Section */
 .banner {
     text-align: center;
-    padding: 60px 20px; /* Increased padding */
-    background: linear-gradient(to right, #0072ff, #00c6ff); /* Bright gradient */
+    padding: 80px 20px; /* Increased padding */
+    background: radial-gradient(circle, #0072ff 0%, #00c6ff 100%); /* Radial gradient for a softer look */
     color: white;
-    border-radius: 15px; /* Rounded corners for a cozy feel */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* More pronounced shadow */
+    border-radius: 30px; /* Rounded corners for a cozy feel */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+    margin: 20px; /* Margin for spacing */
 }
 
 .banner h1 {
-    font-size: 2.5em;
+    font-size: 2.8em; /* Larger title */
     margin-bottom: 10px; /* Space below the heading */
 }
 
@@ -101,12 +103,12 @@ body {
 }
 
 .sigma, .discord {
-    padding: 12px 30px; /* Slightly larger buttons */
+    padding: 15px 30px; /* Larger buttons */
     font-size: 1em;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px; /* Rounded buttons */
     cursor: pointer;
-    transition: background-color 0.3s; /* Smooth transition on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition on hover */
 }
 
 .sigma {
@@ -119,6 +121,10 @@ body {
     color: white;
 }
 
+.sigma:hover, .discord:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
 /* Reviews Section */
 .review-container {
     display: flex;
@@ -128,12 +134,17 @@ body {
 }
 
 .review-box {
-    background: #1a1a1a; /* Darker background for reviews */
-    border-radius: 10px;
+    background: #1f1f1f; /* Darker background for reviews */
+    border-radius: 20px; /* Rounded corners for a softer look */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* More pronounced shadow */
     margin: 15px;
     padding: 20px; /* Added padding for content */
     width: calc(33% - 30px);
+    transition: transform 0.3s; /* Scale effect on hover */
+}
+
+.review-box:hover {
+    transform: scale(1.02); /* Slight scale on hover */
 }
 
 .bottom-left {
@@ -144,13 +155,14 @@ body {
 
 .bottom-left h6 {
     margin-left: 10px;
+    color: #ff4081; /* Accent color for text */
 }
 
 /* FAQ Section */
 .container-hero {
     margin: 20px;
-    background: #1a1a1a; /* Dark background for FAQ */
-    border-radius: 10px;
+    background: #1f1f1f; /* Dark background for FAQ */
+    border-radius: 20px; /* Rounded corners */
     padding: 20px; /* Increased padding */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
 }
@@ -162,10 +174,11 @@ body {
 
 /* Footer */
 footer {
-    background-color: #1a1a1a; /* Dark footer */
+    background-color: #1f1f1f; /* Dark footer */
     color: #ffffff;
     text-align: center;
     padding: 20px;
+    border-radius: 20px; /* Rounded corners for a softer look */
 }
 
 .footerContainer {
@@ -196,11 +209,11 @@ footer {
     }
 
     .banner h1 {
-        font-size: 2em;
+        font-size: 2.2em; /* Adjusted for smaller screens */
     }
 
     .banner p {
-        font-size: 1em;
+        font-size: 1em; /* Adjusted for smaller screens */
     }
 
     .buttons-container {
