@@ -1,233 +1,222 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&display=swap');
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Body and basic styling */
 body {
-  color: #fff;
-  margin: 0;
-  font-family: "Outfit", sans-serif;
-  text-align: center;
-  background-color: #181818; 
-  overflow-x: hidden;
-  background-image: url('data:image/svg+xml,<svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M-5 0 C 40 -10, 80 40, 100 0 L100 100 L0 100 Z" fill="#121212" /></svg>'); /* Subtle abstract background */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-.banner {
-  width: 100%;
-  height: calc(100vh - 0px);
-  display: flex;
-  flex-direction: column;    
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.8); /* Slightly transparent background */
-  color: #fff;
-}
-        
-.banner h1 {
-  font-size: 2.5em;
-  margin: 0;
-  color: transparent; 
-  -webkit-background-clip: text; 
-  -webkit-text-fill-color: transparent; 
-  background-image: linear-gradient(to right, #ff5e62, #ff9966, #ffc370, #ffd777); 
-}
-
-.banner p {
-  font-size: 1.1em; 
-  color: transparent; 
-  -webkit-background-clip: text; 
-  -webkit-text-fill-color: transparent; 
-  background-image: linear-gradient(to left, #89cff0, #a8e0ff, #c6e2ff, #e0e5ff); 
-}
-
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(255, 255, 255, 0.02); /* Even more subtle background */
-  backdrop-filter: blur(5px);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  z-index: 9999;
-}
-
-.navbar-left {
-  display: flex;
-  align-items: center;
-}
-
-.navbar-left a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-}
-
-.logo {
-  width: 40px;
-  height: 40px;
-  margin-right: 1rem;
-  border-radius: 50%;
-  border: 2px solid rgba(255, 255, 255, 0.2); /* Subtle border */
-}
-
-.nav-text {
-  color: white;
-  font-size: 18px;
-  margin: 0;
-}
-
-.navbar-right {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-.nav-button {
-  background-color: rgba(255, 255, 255, 0.05); /* Even more subtle white background */
-  border: none;
-  border-radius: 10px; 
-  color: white;
-  font-size: 16px;
-  padding: 0.8rem 1.5rem;
-  transition: background-color 0.3s, transform 0.2s;
-  text-decoration: none;
-}
-
-.nav-button:hover {
-  background-color: rgba(255, 255, 255, 0.1); 
-  transform: translateY(-2px); /* Slight hover effect */
-}
-
-.sigma {
-  background-color: rgba(255, 255, 255, 0.05); 
-  color: white;
-  border-radius: 10px;
-  border: none;
-  padding: 0.8rem 1.5rem;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.sigma:hover {
-  background: rgba(255, 255, 255, 0.1); 
-  transform: translateY(-2px); /* Slight hover effect */
-}
-
-.discord {
-  background-color: rgba(255, 255, 255, 0.05); 
-  color: white;
-  border-radius: 10px;
-  border: none;
-  padding: 0.8rem 1.5rem;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.discord:hover {
-  background: #5865F2;
-  color: #000;
-  transform: translateY(-2px); /* Slight hover effect */
-}
-
+/* Loading Screen */
 #loading-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #181818; 
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 9998;
-  opacity: 1;
-  transition: opacity 0.5s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 999;
 }
 
 .dots {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .dot {
-  width: 12px;
-  height: 12px;
-  margin: 0 5px;
-  background-color: #fff;
-  border-radius: 50%;
-  animation: bounce 0.6s infinite alternate;
-}
-
-.dot:nth-child(1) {
-  animation-delay: 0s;
-}
-
-.dot:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-.dot:nth-child(3) {
-  animation-delay: 0.4s;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #333;
+    animation: bounce 0.6s infinite alternate;
 }
 
 @keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-15px);
-  }
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
 }
 
-#fetching-text {
-  margin-top: 10px;
-  font-size: 1rem;
-  color: #ccc;
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
 }
 
-.search-container {
-  text-align: center; 
-  margin-bottom: 20px;
+.navbar-left {
+    display: flex;
+    align-items: center;
 }
 
-#search {
-  width: 40vw;
-  padding: 10px;
-  background-color: rgba(255, 255, 255, 0.05); 
-  border-radius: 50px;
-  border: none;
-  color: white;
+.logo {
+    height: 40px;
+}
+
+.nav-button {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Banner Section */
+.banner {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+    color: white;
+}
+
+.banner h1 {
+    font-size: 2.5em;
+}
+
+.banner p {
+    margin: 20px 0;
+    font-size: 1.2em;
 }
 
 .buttons-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; 
-  gap: 5px; 
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; 
-  gap: 20px; 
+.sigma, .discord {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.image-item {
-  position: relative;
-  width: 200px;
-  height: 170px;
-  overflow: hidden;
-  transition: transform 0.3s;
-  border-radius: 10px;
+.sigma {
+    background-color: #ff4081;
+    color: white;
 }
 
-.image-item:hover {
-  transform: scale(1.1);
+.discord {
+    background-color: #7289da;
+    color: white;
 }
 
-.image-item a {
-  display:
+/* Reviews Section */
+.review-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.review-box {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    width: calc(33% - 20px);
+}
+
+.bottom-left {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.bottom-left h6 {
+    margin-left: 10px;
+}
+
+/* FAQ Section */
+.container-hero {
+    margin: 20px;
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.text-box h2 {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.socialIcons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5em;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .review-box {
+        width: calc(50% - 20px);
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-right {
+        margin-top: 10px;
+    }
+
+    .banner h1 {
+        font-size: 2em;
+    }
+
+    .banner p {
+        font-size: 1em;
+    }
+
+    .buttons-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .review-box {
+        width: 100%;
+    }
+
+    .sigma, .discord {
+        width: 100%;
+        font-size: 1.2em;
+    }
+
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar-right {
+        margin-top: 5px;
+    }
+}
