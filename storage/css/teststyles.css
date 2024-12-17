@@ -82,6 +82,18 @@ body {
     font-weight: bold;
 }
 
+/* Move "Pete Zah" next to the logo */
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.pete-zah {
+    margin-left: 10px; /* Space between logo and text */
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
 /* Navbar Buttons */
 .nav-button {
     margin-left: 20px;
@@ -98,7 +110,7 @@ body {
 .banner {
     text-align: center;
     padding: 50px 20px;
-    background: linear-gradient(135deg, #3f51b5, #ff4081); /* Gradient background */
+    background: linear-gradient(135deg, #2196F3, #03A9F4); /* More boyish gradient */
     border-radius: 20px;
     margin: 20px auto;
     width: 80%;
@@ -107,7 +119,7 @@ body {
 
 .banner h1 {
     font-size: 3em;
-    background: -webkit-linear-gradient(#ff4081, #3f51b5);
+    background: -webkit-linear-gradient(#03A9F4, #2196F3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -185,8 +197,8 @@ button:hover {
 
 /* Footer */
 footer {
-    background-color: #222;
-    padding: 20px;
+    background-color: #1b1b1b; /* Slightly darker for professionalism */
+    padding: 30px;
     text-align: center;
     border-radius: 15px;
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
@@ -196,10 +208,16 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px; /* Centering the footer */
+    margin: 0 auto;
+}
+
+.footerContainer .socialIcons {
+    display: flex;
 }
 
 .socialIcons a {
-    margin: 0 10px;
+    margin: 0 15px;
     color: #ffffff;
     font-size: 1.5em;
     transition: color 0.3s ease;
@@ -211,6 +229,8 @@ footer {
 
 .footerBottom {
     margin-top: 20px;
+    font-size: 0.8em;
+    color: #cccccc; /* Lighter text for the footer copyright */
 }
 
 /* Responsive Design */
